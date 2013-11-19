@@ -20,15 +20,20 @@ android {
         minSdkVersion 9
         targetSdkVersion 19
     }
-    buildTypes {
+
+    signingConfigs {
         release {
-            runProguard true
-            proguardFile getDefaultProguardFile('proguard-android-optimize.txt')
+            storeFile file(project.property("proj.keystore"))
+            storePassword project.property("proj.password")
+            keyAlias project.property("proj.alias")
+            keyPassword project.property("proj.password")
         }
     }
-    productFlavors {
-        defaultFlavor {
-            proguardFile 'proguard-rules.txt'
+
+    buildTypes {
+        release {
+            debuggable false
+            signingConfig signingConfigs.release
         }
     }
 }
