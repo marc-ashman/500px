@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="3">
+    <RelativeLayout
+            android:id="@+id/gallery_listitem_layout1"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1" >
+        <ProgressBar
+                android:id="@+id/gallery_listitem_progressbar1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone"/>
+        <ImageView
+                android:id="@+id/gallery_listitem_image1"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"/>
+    </RelativeLayout>
+    <RelativeLayout
+            android:id="@+id/gallery_listitem_layout2"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1" >
+        <ProgressBar
+                android:id="@+id/gallery_listitem_progressbar2"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone"/>
+        <ImageView
+                android:id="@+id/gallery_listitem_image2"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"/>
+    </RelativeLayout>
+    <RelativeLayout
+            android:id="@+id/gallery_listitem_layout3"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1" >
+        <ProgressBar
+                android:id="@+id/gallery_listitem_progressbar3"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone"/>
+        <ImageView
+                android:id="@+id/gallery_listitem_image3"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,42 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:0.6.+'
+    }
+}
+apply plugin: 'android'
+
+repositories {
+    mavenCentral()
+}
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "18.0.1"
+
+    defaultConfig {
+        minSdkVersion 9
+        targetSdkVersion 19
+    }
+    buildTypes {
+        release {
+            runProguard true
+            proguardFile getDefaultProguardFile('proguard-android-optimize.txt')
+        }
+    }
+    productFlavors {
+        defaultFlavor {
+            proguardFile 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile files('libs/signpost-core-1.2.1.2.jar', 'libs/signpost-commonshttp4-1.2.1.1.jar')
+	compile 'com.android.support:support-v4:19.0.0'
+	compile 'com.android.support:appcompat-v7:19.0.0'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile project(':volley')
+}

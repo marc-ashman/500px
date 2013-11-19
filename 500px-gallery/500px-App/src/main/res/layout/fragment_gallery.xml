@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey">
+    <LinearLayout
+            android:id="@+id/gallery_listLayout"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone" >
+        <ListView
+                android:id="@+id/gallery_list"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+        <TextView
+                android:id="@+id/gallery_listDownloadingMore"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:gravity="center_horizontal"
+                android:text="@string/gallery_downloadingMore"
+                android:visibility="gone"/>
+    </LinearLayout>
+    <LinearLayout
+            android:id="@+id/gallery_loadingLayout"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+        <ProgressBar
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal" />
+        <TextView
+                android:id="@+id/gallery_loadingText"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:text="@string/gallery_downloadingList" />
+    </LinearLayout>
+    <TextView
+            android:id="@+id/gallery_errorText"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/black"
+            android:orientation="vertical"
+            android:text="@string/gallery_listDownloadError"
+            android:visibility="gone" />
+
+</RelativeLayout>

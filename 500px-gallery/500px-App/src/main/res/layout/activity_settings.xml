@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+        <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="4dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="@string/settings_qualityText"/>
+
+        <RadioGroup
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+            <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@color/grey" />
+            <RadioButton
+                    android:id="@+id/quality_high"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_qualityHigh"
+                    android:onClick="onRadioButtonClicked"/>
+            <RadioButton
+                    android:id="@+id/quality_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_qualityMedium"
+                    android:onClick="onRadioButtonClicked"/>
+            <RadioButton
+                    android:id="@+id/quality_low"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_qualityLowest"
+                    android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+        <Button
+                android:id="@+id/settings_logout"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="32dp"
+                android:text="@string/settings_logout" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">500px Demo</string>
+    <string name="login">Login</string>
+    <string name="settings">Settings</string>
+    <string name="twitterShare">Twitter</string>
+
+    <string name="error_needData">This app requires an active data connection</string>
+    <string name="error_generic">There was an error with the request</string>
+
+    <string name="common_ok">OK</string>
+    <string name="common_cancel">Cancel</string>
+
+    <string name="oauth_consumer_secret">BSJQA581oJ2pISo07w0MOy2uqtgLqbahyxawP6DY</string>
+    <string name="oauth_consumer_key">riFkxTxju2ce07JyV0obzpcIIf9YrkS94MgH2aTF</string>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="drawer_open_title">Photo Galleries</string>
+
+    <string name="gallery_downloadingList">Downloading image list</string>
+    <string name="gallery_downloadingMore">Downloading next page...</string>
+    <string name="gallery_errorGettingPage">Error downloading next page...</string>
+    <string name="gallery_noMoreImages">No more pictures in this category</string>
+    <string name="gallery_listDownloadError">There was an error downloading the gallery list</string>
+
+    <string name="picview_noDescription">There is no description for this picture</string>
+    <string name="picview_share">Share</string>
+    <string name="picview_viewFull">View Full Size Image</string>
+    <string name="picview_unknownFavCount">Unknown</string>
+    <string name="picview_errorFavoriting">Error favoriting the picture</string>
+    <string name="picview_favorited">This picture has been favorited</string>
+    <string name="picview_errorSharing">There was an error trying to share this picture</string>
+
+    <string name="login_email">Email address</string>
+    <string name="login_password">Password</string>
+    <string name="login_submit">Login</string>
+    <string name="login_register">Register</string>
+    <string name="login_logging_in">Logging in...</string>
+    <string name="login_invalid_email">You have entered an invalid email address</string>
+    <string name="login_no_email">Please enter an email address</string>
+    <string name="login_no_password">Please enter a password</string>
+    <string name="login_no_email_password">Please enter an email address and password</string>
+    <string name="login_register_url">https://500px.com/signup</string>
+    <string name="login_auth_fail">There was an error with your email/password combination, please try again</string>
+    <string name="login_need_login">You need to login to do that</string>
+    <string name="login_login">Login now</string>
+
+    <string name="fullpic_downloading">Downloading high quality picture</string>
+    <string name="fullpic_error">There was an error downloading the image</string>
+
+    <string name="share_title">Choose your sharing method</string>
+    <string name="share_fb">Facebook</string>
+    <string name="share_email">Email</string>
+    <string name="share_noFacebook">Facebook is not installed</string>
+
+    <string name="settings_qualityHighest">Highest</string>
+    <string name="settings_qualityHigh">Large</string>
+    <string name="settings_qualityMedium">Medium</string>
+    <string name="settings_qualityLowest">Tiny</string>
+    <string name="settings_logout">Logout</string>
+    <string name="settings_qualityText">Gallery image size</string>
+    <string name="settings_loggedOut">Logged out</string>
+</resources>

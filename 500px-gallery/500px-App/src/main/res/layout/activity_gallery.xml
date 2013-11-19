@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/gallery_drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <!-- We want this fragment to retain it's instance in configuration changes,  -->
+    <!-- so it must contain the android:id attribute in xml -->
+    <fragment
+            android:id="@+id/gallery_fragment"
+            android:name="com.ashman.fivehundredpx.GalleryFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    <ListView
+            android:id="@+id/gallery_drawer_listview"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:choiceMode="singleChoice"
+            android:divider="@color/drawer_divider"
+            android:dividerHeight="1px"
+            android:background="@color/drawer_bg" />
+</android.support.v4.widget.DrawerLayout>

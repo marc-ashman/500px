@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="grey">#cdcdcd</color>
+    <color name="holo_blue_dark">#0099cc</color>
+    <color name="transparent">#000000</color>
+
+    <color name="drawer_bg">#111111</color>
+    <color name="drawer_bg_selected">#444444</color>
+    <color name="drawer_divider">#444444</color>
+</resources>
